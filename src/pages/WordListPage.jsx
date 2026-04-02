@@ -32,12 +32,13 @@ export default function WordListPage() {
           <div>
             <p className="section-tag">词表浏览</p>
             <h2>单词列表</h2>
+            <p className="panel-description">搜索俄语单词或中文释义，并按字母快速缩小范围。</p>
           </div>
           <p className="muted">共找到 {words.length} 个结果</p>
         </div>
 
         <div className="control-stack">
-          <label className="search-box">
+          <label className="search-box elevated-field">
             <span>搜索单词或释义</span>
             <input
               type="search"
@@ -60,7 +61,7 @@ export default function WordListPage() {
         ) : (
           <div className="empty-state">
             <h3>没有找到匹配的单词</h3>
-            <p>可以尝试更换搜索词，或者切换其他俄语字母分类。</p>
+            <p>可以尝试更换搜索词，或者切换其他俄语字母分类继续查找。</p>
           </div>
         )}
       </section>

@@ -2,7 +2,7 @@ import { initials } from '../data';
 
 export default function AlphabetFilter({ value, onChange }) {
   return (
-    <div className="alphabet-grid">
+    <div className="alphabet-grid alphabet-filter">
       <button
         type="button"
         className={value === 'ALL' ? 'chip active' : 'chip'}

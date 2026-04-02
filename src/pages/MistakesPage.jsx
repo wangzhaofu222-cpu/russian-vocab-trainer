@@ -14,6 +14,7 @@ export default function MistakesPage() {
           <div>
             <p className="section-tag">重点复习</p>
             <h2>错词本</h2>
+            <p className="panel-description">把不熟悉的词集中起来，单独反复强化。</p>
           </div>
           <p className="muted">当前共有 {mistakeWords.length} 个待复习单词</p>
         </div>
@@ -51,9 +52,14 @@ export default function MistakesPage() {
         <section className="empty-state">
           <h3>错词本还是空的</h3>
           <p>在背单词页面点击“不认识”后，单词会自动加入错词本并保存在本地浏览器里。</p>
-          <Link className="button primary" to="/study">
-            去开始学习
-          </Link>
+          <div className="hero-actions centered-actions">
+            <Link className="button primary" to="/study">
+              去开始学习
+            </Link>
+            <Link className="button secondary" to="/words">
+              查看词表
+            </Link>
+          </div>
         </section>
       )}
     </section>
